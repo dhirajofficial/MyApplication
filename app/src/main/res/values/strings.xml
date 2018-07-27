@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_number">Phone Number</string>
+    <string name="hint_password">Password</string>
+    <string name="login">login</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="terms"><u>I agree on your terms and conditions</u></string>
+</resources>

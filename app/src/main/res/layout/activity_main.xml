@@ -1,0 +1,37 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#f9fbe7"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/EditText"
+        android:background="@drawable/edittext"
+        android:hint="@string/hint_number" />
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/EditText"
+        android:background="@drawable/edittext"
+        android:hint="@string/hint_password" />
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/editLogin"
+        android:background="@drawable/edittext"
+        android:text="@string/login" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/SignUp"
+        android:layout_marginTop="10dp"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
