@@ -1,54 +1,117 @@
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_width="match_parent">
 
-    <android.support.v7.widget.AppCompatEditText
-        style="@style/signup_edittext"
-        android:background="@drawable/edittext"
-        android:hint="name" />
-
-    <android.support.v7.widget.AppCompatEditText
-        style="@style/signup_edittext"
-        android:background="@drawable/edittext"
-        android:hint="address" />
-
-    <android.support.v7.widget.AppCompatEditText
-        style="@style/signup_edittext"
-        android:background="@drawable/edittext"
-        android:hint="@string/hint_number" />
-
-    <android.support.v7.widget.AppCompatEditText
-        style="@style/signup_edittext"
-        android:background="@drawable/edittext"
-        android:hint="@string/hint_password" />
-
-    <android.support.v7.widget.LinearLayoutCompat
+    <LinearLayout
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <android.support.v7.widget.AppCompatCheckBox
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp" />
+            android:src="@mipmap/ic_launcher_foreground"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"/>
 
-        <android.support.v7.widget.AppCompatTextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/skyBlue"
+            android:textSize="30dp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_condition"
+                android:textSize="30dp"
+                android:textColor="@color/skyBlue"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="@string/terms" />
+            android:layout_gravity="center"
+            android:background="#87cefa"
+            android:text="Sign Up"
+            android:layout_margin="25dp"/>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_margin="25dp">
 
-    <android.support.v7.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext"
-        android:text="@string/sign_up" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-</android.support.v7.widget.LinearLayoutCompat>
+                <Button
+                    android:id="@+id/loginFacebook"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_facebook"
+                    android:drawableLeft="@mipmap/facebook"
+                    android:background="@color/facebookBlueDark"/>
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_google"
+                    android:drawableLeft="@mipmap/google"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textSize="20dp"
+            android:textColor="@color/skyBlue"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

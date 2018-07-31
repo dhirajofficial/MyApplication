@@ -5,4 +5,17 @@
     <string name="login">login</string>
     <string name="sign_up"><u>Sign Up</u></string>
     <string name="terms"><u>I agree on your terms and conditions</u></string>
+    <!--<string name="app_name">EasyAd</string>-->
+    <string name="remember_me"><u>Remember me</u></string>
+    <string name="login_facebook">Log in with Facebook</string>
+    <string name="login_google">Log in with Google</string>
+    <string name="select_catagory">Select Catagory</string>
+    <string name="terms_and_condition">I agree on your terms and conditions</string>
+    <string name="copyright">copyright one up communication and Four Tuples Solution 2018</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search Ad</string>
+    <string name="title_post_ad">Post Ad</string>
+    <string name="title_profile">User profile</string>
 </resources>
+
